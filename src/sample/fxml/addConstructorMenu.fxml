@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="720.0" style="-fx-background-color: #616063;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AddConstructorController">
+    <children>
+        <AnchorPane prefHeight="69.0" prefWidth="720.0" style="-fx-background-color: #212123;">
+            <children>
+                <Label alignment="CENTER" layoutX="117.0" layoutY="2.0" text="Строительная фирма" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="52.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="222.0" layoutY="77.0" text="Добавление конструктора" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="addConstructorBtn" layoutX="365.0" layoutY="229.0" mnemonicParsing="false" onAction="#addConstructor" prefHeight="38.0" prefWidth="148.0" text="Добавить">
+            <font>
+                <Font name="Impact" size="15.0" />
+            </font>
+        </Button>
+      <TextField fx:id="nameLabel" layoutX="196.0" layoutY="135.0" prefHeight="25.0" prefWidth="362.0" />
+      <Label layoutX="140.0" layoutY="136.0" text="Имя:" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="178.0" text="Стаж(лет):" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workExpLabel" layoutX="196.0" layoutY="178.0" prefHeight="25.0" prefWidth="362.0" />
+      <Button fx:id="backBtn" layoutX="207.0" layoutY="229.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="148.0" text="Отмена">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
